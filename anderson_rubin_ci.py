@@ -29,9 +29,10 @@ def anderson_rubin_ci(model, conflevel=0.95):
     model -- a fit Statsmodels results container (required)
     conflevel -- the confidence level to calculate (default 0.95)
 
-    Returns: Tuple of length two, bottom value followed by top value. However,
-             note that tuples with numeric results are not guaranteed, and may 
-             be a string or inf in some cases.
+    Returns: 
+    Tuple of length two, bottom value followed by top value. However,
+    note that tuples with numeric results are not guaranteed, and may 
+    be a string or inf in some cases.
     """
     y1 = model.model.endog
     n = len(y1)
