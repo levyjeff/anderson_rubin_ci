@@ -69,7 +69,7 @@ def anderson_rubin_ci(model, conflevel=0.95):
 if __name__ == '__main__':
     #Test
     from statsmodels.sandbox.regression.gmm import IV2SLS
-    df = pd.read_csv('card_data.csv')
+    df = pd.read_csv(r'data\card_data.csv')
     
     endog = df['lwage']
     exog = df[['educ', 'exper','expersq','black','south','smsa','reg661','reg662',
