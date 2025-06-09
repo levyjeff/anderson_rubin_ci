@@ -25,7 +25,6 @@ def anderson_rubin_ci(model, conflevel=0.95):
 
     y2 = regressors[:,[c not in instrument_cols for c in regressor_cols]]
     Z = regressors[:,[c in instrument_cols for c in regressor_cols]]
-    # W2 = W[:,[c in regressor_cols for c in instrument_cols]]
 
     l = W.shape[1]
     k = Z.shape[1]
